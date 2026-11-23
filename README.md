@@ -1,7 +1,5 @@
-# iPhone Guides
+# Computers & Accessories Guides
 
-| Problem | Guide |
+| Item | Guide |
 |---|---|
-| Phone restarts on its own, boot loops, restarts every few minutes | [Random Restarts](random-restarts/) |
-
-More guides will be added as they are reviewed.
+| FIFINE microphone | [Setup and troubleshooting](fifine-microphone.md) |
