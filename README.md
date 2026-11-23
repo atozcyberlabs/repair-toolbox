@@ -1,4 +1,4 @@
-# AtoZ CyberLabs Repair Toolbox
+# AtoZCyberLabs Repair Toolbox
 
 Repair guides, approved tools and reviewed videos for the AtoZ CyberLabs bench.
 Start here, pick the device, then pick the problem.
