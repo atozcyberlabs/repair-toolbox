@@ -5,4 +5,4 @@
 
 | Video | What it shows | Link |
 |---|---|---|
-| | | |
+| iPhone 12 restarts every 3 min | Shows how to read a "missing sensor" panic and test the charge port flex | https://youtube.com/... |
