@@ -6,4 +6,5 @@
 
 | Tool | When to use it | Link |
 |---|---|---|
-| | | |
+| iPanic Extractor | Step 3. Pulls the latest panic-full log off an unlocked iPhone over USB. Does not change, unlock or restore the phone. | https://apps.microsoft.com/detail/9p0k5cbvq6np |
+| iDevice Log Analyzer | Step 4. Matches the panic log against 100+ known issues. Needs iTunes or Apple Mobile Device Support installed. | https://github.com/waynebonc/iDeviceLogAnalyzer-public |
