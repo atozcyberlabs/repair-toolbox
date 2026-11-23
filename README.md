@@ -11,12 +11,12 @@ Start here, pick the device, then pick the problem.
 |---|---|
 | [iPhone](iphone/) | Random restarts, more coming |
 | [Android](android/) | Coming soon |
-| [Computers & Accessories](computers-accessories/) | FIFINE microphone, more coming |
+| [Computers & Accessories](computers-accessories/) |  coming |
 
 ## Quick links
 
 - [iPhone Random Restarts](iphone/random-restarts/)
-- [FIFINE Microphone](computers-accessories/fifine-microphone.md)
+
 
 ## Bench rules
 
