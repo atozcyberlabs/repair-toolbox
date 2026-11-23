@@ -1,5 +1,5 @@
 # iPhone Random Restarts
-
+ 
 Use this when an iPhone restarts by itself, boot loops, or restarts every few minutes.
 
 **Rule of thumb:** read the panic log before you replace any part. The log usually points to the area that is failing.
