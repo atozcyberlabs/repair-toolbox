@@ -11,7 +11,7 @@ Start here, pick the device, then pick the problem.
 |---|---|
 | [iPhone](iphone/) | Random restarts, more coming |
 | [Android](android/) | Coming soon |
-| [Computers & Accessories](computers-accessories/) |  coming |
+| [Computers & Accessories](computers-accessories/) | Coming soon |
 
 ## Quick links
 
