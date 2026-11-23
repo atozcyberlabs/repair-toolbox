@@ -1,5 +1,3 @@
-# Computers & Accessories Guides
+# Android Guides
 
-| Item | Guide |
-|---|---|
-| FIFINE microphone | [Setup and troubleshooting](fifine-microphone.md) |
+No guides yet. Resources will be added here after they are reviewed.
