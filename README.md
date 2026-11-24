@@ -1,9 +1,18 @@
-# AtoZ CyberLabs Repair Toolbox
-
-Repair guides, diagnostic tools, and reference links for the AtoZ CyberBench.
-Start here, pick the device, then pick the problem.
+# AtoZ CyberLabs
+## Technical Repair Knowledge Base
 
 **Repair · Protect · Learn · Explore**
+
+Independent diagnostic resources developed to help repair technicians investigate device failures, understand technical symptoms, verify findings, and complete repairs confidently.
+
+**Built around:**
+
+- Original AtoZ troubleshooting workflows
+- Model-specific fault isolation
+- Panic-log analysis and diagnostic decision trees
+- Verified technician repair cases
+
+Start here, pick the device, then pick the problem.
 
 ## Devices
 
@@ -26,3 +35,7 @@ Start here, pick the device, then pick the problem.
 3. Never take screenshots that show a customer's name, messages, photos, serial number or IMEI.
 4. Customer details stay in the repair ticket, never in this toolbox or in team chat.
 5. Found a mistake or a better fix? See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
+AtoZ CyberLabs is an independent repair shop and is not affiliated with or endorsed by Apple Inc. iPhone is a trademark of Apple Inc.
