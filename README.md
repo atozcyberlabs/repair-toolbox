@@ -32,7 +32,6 @@ Start here, pick the device, then pick the problem.
 
 - **New:** [iPhone Repair Outlook](iphone/repair-outlook.md) (read this first)
 - [Data Services](data-services/) and [DS-001 Software Rescue](data-services/DS-001-software-rescue.md)
-
 - [iPhone Random Restarts](iphone/diagnostics/random-restarts/)
 - [iPhone Liquid Damage](iphone/diagnostics/liquid-damage.md)
 - [iPhone Post-Repair Checklist](iphone/quality-checks/post-repair-checklist.md)
