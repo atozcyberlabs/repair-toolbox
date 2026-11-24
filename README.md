@@ -42,6 +42,7 @@ Pick the device, then the problem. Or pick the service.
 | Section | What's inside |
 |---|---|
 | [iPhone](iphone/) | Diagnostic protocols (DP), model notes, post-repair checklist |
+| [Bench Tools](tools/) | Which software is approved, being evaluated, or for test phones only |
 | [Data Services](data-services/) | Walk-in data retrieval: 10 services in four levels (find it, copy it, protect it, get it working) |
 | [Android](android/) | Coming soon |
 | [Computers & Accessories](computers-accessories/) | Coming soon |

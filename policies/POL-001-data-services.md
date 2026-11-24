@@ -37,7 +37,7 @@ We only provide data services when the customer can unlock the device or sign in
 - **3.4.3** A temporary copy on a store computer is allowed only when there is no other route. It is deleted once the customer confirms their data, and no later than [AJ: set number] days after pickup. The deletion is recorded in the ticket.
 
 ### 3.5 Approved tools
-- **3.5.1** Only tools listed in the repair toolbox may be used on customer devices.
+- **3.5.1** Only tools marked **Approved** in the [Bench Tools Register](../tools/) may be used on customer devices.
 - **3.5.2** A new tool is tested on a shop phone first, approved by AJ, and added to the toolbox before any customer job.
 
 ### 3.6 Verification before handoff

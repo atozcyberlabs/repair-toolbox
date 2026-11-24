@@ -133,12 +133,11 @@ Technician / Date:
 
 ## Approved tools
 
-<!-- AJ: add only tools you have approved for store computers. Name, link, and one line on when to use it. -->
+The full list, with what each tool may and may not be used for, is in the [Bench Tools Register](../tools/). Only **Approved** tools on customer phones.
 
 | Tool | When to use it | Link |
 |---|---|---|
 | Apple Devices app (Windows) / Finder (Mac) | Q3 and Q4: recovery mode and Update | Built in / Microsoft Store |
-| [AJ: add approved tool] | | |
 
 ## Revision history
 
