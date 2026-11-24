@@ -26,6 +26,14 @@
 
 Customer-facing name for all three: **Photo, Backup & Transfer Help.**
 
+### Counter flyer
+
+This is what customers see at the counter. Know what it promises, because every promise on it is a rule we follow.
+
+![Photo, Backup & Transfer Help counter flyer](../assets/flyers/photo-backup-transfer-help.png)
+
+> **Draft:** the [PRICE] spots get filled in by AJ before printing. Prices live in RepairDesk.
+
 ---
 
 ## Step 1: Counter check (2 minutes, free)
