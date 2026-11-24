@@ -4,6 +4,8 @@ Pick the problem the phone is showing. Each guide helps you figure out what's ac
 
 ## Start here
 
+- **New to the bench?** Read the [iPhone Repair Outlook](../briefings/iphone-repair-outlook.md) first.
+
 - **Got wet, or you see corrosion?** Start with [Liquid Damage](diagnostics/liquid-damage.md). It's often the hidden cause behind other symptoms.
 - **Won't turn on?** Start with [No Power / No Boot](diagnostics/no-power.md).
 - **Turns on but won't charge?** Go to [Charging Problems](diagnostics/charging.md).

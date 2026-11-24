@@ -19,7 +19,7 @@ Use this to document a real repair after it's finished and verified. Copy the bl
 
 Case ID:        AZ-CASE-[###]
 Status:         Pending Review
-Protocol used:  DP-[###]
+Protocol used:  DP-[###] or DS-[###]
 Device:         [Model]
 Technician:     [Name]
 Date:           [Month Year]
