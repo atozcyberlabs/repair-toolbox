@@ -1,75 +1,116 @@
-# iPhone Random Restarts
- 
-Use this when an iPhone restarts by itself, boot loops, or restarts every few minutes.
+# DP-001: iPhone Unexpected Restarts and Panic Logs
 
-**Rule of thumb:** read the panic log before you replace any part. The log usually points to the area that is failing.
+**AtoZ CyberLabs | Diagnostic Protocol 001**
 
-Related pages: [Tools](tools.md) · [Videos](videos.md) · [Known panic codes](panic-codes.md)
+| Document ID | Version | Applies to | Owner | Last reviewed |
+|---|---|---|---|---|
+| DP-001 | 1.0 | iPhone (see [model notes](../../models/)) | AJ | 2026-11-23 |
+
+**Objective:** Identify the likely failure category through documented evidence before recommending any component replacement.
+
+**Use this when:** the phone restarts on its own, boot loops, or restarts on a pattern (for example, every 3 minutes).
+
+> **Safety stop:** a swollen, punctured, smoking, or very hot battery means stop and contact AJ before going any further.
+
+Related pages: [Tools](tools.md) · [Videos](videos.md) · [Panic codes and references](panic-codes.md)
 
 ---
 
-## Step 1. Intake checks
+## Decision path
 
-Ask the customer and write the answers in the repair ticket:
+Answer each question in order. Write every answer in the [findings record](#findings-record) as you go.
 
-- When did it start? After a drop, water exposure, an iOS update, or a part replacement somewhere else?
-- How often does it restart? Every few minutes, a few times a day, only when charging?
-- Does it restart only when using the camera, Face ID, or when the phone gets warm?
-- Has the battery or screen been replaced before?
+### Q1. Has the device sustained physical damage or liquid exposure?
 
-Check the phone:
+| Answer | Next step |
+|---|---|
+| **Yes, liquid** | Stop here and run [Liquid Damage](../liquid-damage.md) first. Liquid can cause restarts and will waste a part test. |
+| **Yes, physical** (drop, bent frame, cracked back glass) | Note the damage in the ticket. A damaged back glass or bent frame can tear a flex cable, so keep it in mind at Q4. Go to Q2. |
+| **No** | Go to Q2. |
+| **Unknown** | Check the liquid contact indicator where accessible and inspect the charging port. Corrosion or a triggered indicator counts as **Yes, liquid**. Otherwise go to Q2. |
 
-- Visible damage: bent frame, swollen battery (screen lifting), cracked back glass.
-- Liquid indicators if accessible.
+### Q2. Does the device reach the Home Screen before restarting?
 
-> Do not ask for the passcode. The customer unlocks the phone themselves for the log steps.
+| Answer | Next step |
+|---|---|
+| **Yes** | Go to Q3. |
+| **No** (boot loops at the Apple logo) | You can't pull a log from Settings. Test with a known-good battery and a known-good charging port flex first, since both are common boot-loop causes. If it still loops, a software restore is next, but only after the customer agrees to possible data loss in the ticket. Still looping after restore: Stop and contact AJ. |
 
-## Step 2. Basic software checks
+### Q3. Is a recent panic-full log available?
 
-1. Check the iOS version in **Settings > General > About**. Note it in the ticket.
-2. Check **Settings > Battery > Battery Health** (on newer iOS: Battery Health & Charging). Note the percentage and any service message.
-3. If the phone stays on long enough, ask the customer if they're OK with an iOS update before you go further.
+Customer unlocks the phone, then go to **Settings > Privacy & Security > Analytics & Improvements > Analytics Data** and look for files starting with `panic-full`.
 
-## Step 3. Pull the panic log
+| Answer | Next step |
+|---|---|
+| **Yes** | Pull it with the approved extractor ([tools.md](tools.md)) and go to Q4. |
+| **No** | Restarts without panic logs often point to battery, power, or software. Check Battery Health, update iOS if the customer agrees, then watch the phone for 30 minutes, on and off the charger. If it restarts, test a known-good battery. |
 
-1. With the phone unlocked by the customer, go to **Settings > Privacy & Security > Analytics & Improvements > Analytics Data**.
-2. Look for files starting with `panic-full`. The newest one matters most.
-3. If there are no panic-full files, the restarts may be software related. Skip to Step 6.
-4. Use the approved extractor on the store computer to pull the log. See [tools.md](tools.md).
+### Q4. What does the panic string point to?
 
-## Step 4. Review the log
+Read the panic string near the top of the log. Use the analyzer in [tools.md](tools.md), then confirm with the references in [panic-codes.md](panic-codes.md).
 
-1. Open the log in the approved analyzer. See [tools.md](tools.md).
-2. Find the **panic string** near the top. It often names a missing sensor or a timeout.
-3. Look it up in [panic-codes.md](panic-codes.md). If it's not there, check [videos.md](videos.md) and the outside resources in [tools.md](tools.md).
-4. Write the panic string and the likely cause in the repair ticket.
+| Panic string contains | Likely category | Next step |
+|---|---|---|
+| `Missing sensor(s):` followed by a sensor name | A sensor that isn't reporting, usually on a flex cable | Look up the sensor name in the iFixit Kernel Panics reference. Go to Q5 and test the matching flex. |
+| `thermalmonitord` | Often appears with a missing sensor | Look for a missing sensor in the same log and treat it the same way. Go to Q5. |
+| `SMC PANIC - ASSERTION FAILED` with a 0x... value | A sensor array code that maps to a part, by model | Match the code to the exact model with the iFixit SMC Panic reference before choosing a part. Go to Q5. |
+| Anything else, or nothing clear | Possible software or logic board fault | Update or restore software (with customer agreement). Still restarting: Stop and contact AJ. |
 
-> Treat the analyzer result as a strong clue, not a final answer. Confirm with the test in Step 5.
+**Check the shop's own fixes first:** if the panic string is already in the shop-fix table in [panic-codes.md](panic-codes.md), start with what fixed it last time.
 
-## Step 5. Isolate the part
+### Q5. Confirm with a known-good part (test before you replace)
 
-1. Test with a known-good part when possible (battery or charge port flex are the most common).
-2. If the restarts stop with the test part, replace the part and run the phone for at least 30 minutes, including a charge cycle.
-3. If restarts continue with the known-good part, put the original part back and move to Step 6.
+| Result | Next step |
+|---|---|
+| **Restarts stop** with the test part | Replace the part. Run the phone 30 minutes including a charge cycle, confirm no new panic logs, then complete the [post-repair checklist](../../quality-checks/post-repair-checklist.md). |
+| **Restarts continue** | Put the original part back. Go back to Q4 and check for a second sensor, or Stop and contact AJ. |
 
-## Step 6. Software restore
+---
 
-1. Make sure the customer has a backup or agrees to data loss in writing on the ticket.
-2. Update or restore iOS using the store computer.
-3. If the phone still restarts after a clean restore, it's likely a board-level issue. Go to Step 7.
+## Stop and contact AJ
 
-## Step 7. Escalation
+Stop and message AJ on Discord if:
 
-Escalate when:
+- The battery is swollen, punctured, smoking, or very hot
+- The phone still loops or restarts after a software restore
+- The panic points to the logic board, or no part test fixes it
+- There's corrosion on the logic board
 
-- The panic log points to the board (CPU, NAND, or a power issue on the logic board).
-- Known-good part tests and a restore did not fix it.
-- There are signs of liquid damage on the board.
+Include the device model, your findings record, and the steps you already tried. No customer details in Discord.
 
-**How to escalate:** escalate to the lead tech, or message the owner on Discord with the device model, panic string and steps already tried. Do not share customer details in Discord.
+---
 
-## Step 8. Close out
+## Findings record
 
-- Write the panic string, the fix, and the parts used in the ticket.
-- If this was a new panic string, send it in team chat so it can be added to [panic-codes.md](panic-codes.md).
-- Delete any log files from the store computer.
+Copy this into the repair ticket and fill it in as you go.
+
+```
+DP-001 Findings
+Device model:
+Liquid / physical damage:  Yes (liquid) / Yes (physical) / No / Unknown
+Reaches Home Screen:       Yes / No
+Panic-full log available:  Yes / No
+Panic string (short):
+Likely category:
+Known-good part tested:
+Result:
+Recommendation:
+Technician / Date:
+```
+
+When the repair is confirmed, send the short panic string, model, and fix in team chat so it can be added to the shop-fix table as a verified case.
+
+---
+
+## Model-specific references
+
+| Model | Reference |
+|---|---|
+| iPhone 14 | [Repair Wiki: How to Fix an iPhone 14 That Randomly Restarts](https://repair.wiki/w/How_To_Fix_an_iPhone_14_That_Randomly_Restarts) |
+| All models | Apple repair manual for the exact model, linked from each [model page](../../models/) |
+
+## Revision history
+
+| Version | Date | Change | By |
+|---|---|---|---|
+| 1.0 | 2026-11-23 | First release as a diagnostic protocol | AJ |
