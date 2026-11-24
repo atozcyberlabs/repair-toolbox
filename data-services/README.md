@@ -4,7 +4,7 @@
 
 | Section owner | Version | Applies to | Last reviewed |
 |---|---|---|---|
-| AJ | 0.1 (draft) | iPhone first, Android to follow | 2026-11-24 |
+| AJ | 0.2 (draft) | iPhone first, Android to follow | 2026-11-24 |
 
 **Our rule:** we protect the customer's data before we erase, replace, or give up on any device.
 
@@ -28,7 +28,7 @@ If the answers are "yes, important" and "no backup," the job is a data job first
 
 ## Top 10 software services
 
-The four starred services are where we start. The rest come later.
+The four starred services are where we start. The rest come later. Background: [Where We're Heading](../briefings/where-we-are-heading.md).
 
 | # | Service | What the customer gets | Status |
 |---|---|---|---|
@@ -87,3 +87,4 @@ AJ sets prices. Techs quote only from this table.
 | Version | Date | Change | By |
 |---|---|---|---|
 | 0.1 | 2026-11-24 | First draft: top 10 list, rules, DS-001 | AJ |
+| 0.2 | 2026-11-24 | DS-002, DS-003, DS-004 drafted; new protocols use the [service protocol template](../templates/service-protocol-template.md) | AJ |

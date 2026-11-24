@@ -12,29 +12,39 @@ Independent diagnostic resources developed to help repair technicians investigat
 - Panic-log analysis and diagnostic decision trees
 - Verified technician repair cases
 
-Start here, pick the device, then pick the problem.
+This toolbox has three parts. Work through them in order.
 
-## Devices
+## 1. Read: what's coming and why
 
-| Device | Guides |
+Start here if you're new, or when a new briefing is posted.
+
+| Briefing | What it covers |
 |---|---|
-| [iPhone](iphone/) | Diagnostics, model notes, post-repair checklist |
-| [Android](android/) | Coming soon |
-| [Computers & Accessories](computers-accessories/) | Coming soon |
+| [Where We're Heading](briefings/where-we-are-heading.md) | The data-first direction and the new software services |
+| [iPhone Repair Outlook](briefings/iphone-repair-outlook.md) | Longer phone ownership, Apple repair programs, California repair law |
 
-## Services
+All briefings: [briefings/](briefings/)
+
+## 2. Follow: the steps
+
+Pick the device, then the problem. Or pick the service.
 
 | Section | What's inside |
 |---|---|
-| [Data Services](data-services/) | Data-first software services: Software Rescue, Data Rescue, Backup, Migration |
+| [iPhone](iphone/) | Diagnostic protocols (DP), model notes, post-repair checklist |
+| [Data Services](data-services/) | Data-first service protocols (DS): Software Rescue, Data Rescue, Backup, Migration |
+| [Android](android/) | Coming soon |
+| [Computers & Accessories](computers-accessories/) | Coming soon |
 
-## Quick links
+**Quick links:** [DS-001 Software Rescue](data-services/DS-001-software-rescue.md) · [DP-001 Random Restarts](iphone/diagnostics/random-restarts/) · [Liquid Damage](iphone/diagnostics/liquid-damage.md) · [Post-Repair Checklist](iphone/quality-checks/post-repair-checklist.md)
 
-- **New:** [iPhone Repair Outlook](iphone/repair-outlook.md) (read this first)
-- [Data Services](data-services/) and [DS-001 Software Rescue](data-services/DS-001-software-rescue.md)
-- [iPhone Random Restarts](iphone/diagnostics/random-restarts/)
-- [iPhone Liquid Damage](iphone/diagnostics/liquid-damage.md)
-- [iPhone Post-Repair Checklist](iphone/quality-checks/post-repair-checklist.md)
+## 3. Write it up: templates
+
+| Template | Use it for |
+|---|---|
+| [Repair case](templates/case-template.md) | Writing up a real, finished repair for the [cases](cases/) folder |
+| [Diagnostic guide](templates/guide-template.md) | A new problem guide for a device |
+| [Service protocol](templates/service-protocol-template.md) | A new data service (DS) |
 
 ## Bench rules
 
