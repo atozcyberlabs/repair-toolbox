@@ -32,7 +32,7 @@ This is what customers see at the counter. Know what it promises, because every 
 
 ![Photo, Backup & Transfer Help counter flyer](../assets/flyers/photo-backup-transfer-help.png)
 
-> **Draft:** the [PRICE] spots get filled in by AJ before printing. Prices live in RepairDesk.
+> Prices aren't printed on the flyer. Techs quote from RepairDesk. Print a proof and scan the QR code before printing a batch.
 
 ---
 
