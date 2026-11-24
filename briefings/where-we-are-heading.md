@@ -31,7 +31,7 @@ Walk-in data retrieval services that sit on top of our repairs, in four levels:
 3. **Protect and move it:** working backups and new phone moves
 4. **Get it working long enough:** software rescue and board-level recovery, then save the data
 
-We start with three on the counter menu: Find My Missing Photos, Save My Photos & Videos, and Set Up & Verify My Backup. The full list is in [Data Services](../data-services/), and the rules are in [POL-001](../policies/POL-001-data-services.md).
+We lead with **Photo, Backup & Transfer Help**: Find My Photos, Photo & Video Copy, and Backup Setup & Check ([DS-005](../data-services/DS-005-photo-backup-transfer-help.md)). Both stores run a two-week trial and log every request. The full list is in [Data Services](../data-services/), and the rules are in [POL-001](../policies/POL-001-data-services.md).
 
 ## What this means for you at the bench
 

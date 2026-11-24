@@ -46,7 +46,7 @@ Pick the device, then the problem. Or pick the service.
 | [Android](android/) | Coming soon |
 | [Computers & Accessories](computers-accessories/) | Coming soon |
 
-**Quick links:** [DS-001 Software Rescue](data-services/DS-001-software-rescue.md) · [DP-001 Random Restarts](iphone/diagnostics/random-restarts/) · [Liquid Damage](iphone/diagnostics/liquid-damage.md) · [Post-Repair Checklist](iphone/quality-checks/post-repair-checklist.md)
+**Quick links:** [Photo, Backup & Transfer Help (DS-005)](data-services/DS-005-photo-backup-transfer-help.md) · [DS-001 Software Rescue](data-services/DS-001-software-rescue.md) · [DP-001 Random Restarts](iphone/diagnostics/random-restarts/) · [Liquid Damage](iphone/diagnostics/liquid-damage.md) · [Post-Repair Checklist](iphone/quality-checks/post-repair-checklist.md)
 
 ## 4. Write it up: templates
 

@@ -10,6 +10,7 @@ Copy a template, fill in the [square brackets], and send it to AJ for review. No
 | [Service protocol](service-protocol-template.md) | Steps for a new data service (DS) | [data-services/](../data-services/) |
 | [Diagnostic guide](guide-template.md) | Steps for a new device problem (DP) | the device folder, e.g. [iphone/](../iphone/) |
 | [Repair case](case-template.md) | A real, finished, verified repair | [cases/](../cases/) |
+| [Counter trial log](counter-trial-log.md) ([CSV](counter-trial-log.csv)) | Logging every counter request during the two-week trial | A private sheet, **not** this repo |
 
 **Which one do I need?**
 - A rule ("we always / we never") → Policy

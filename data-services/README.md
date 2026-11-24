@@ -4,7 +4,7 @@
 
 | Section owner | Version | Applies to | Policy | Last reviewed |
 |---|---|---|---|---|
-| AJ | 0.3 (draft) | iPhone first, Android to follow | [POL-001](../policies/POL-001-data-services.md) | 2026-11-24 |
+| AJ | 0.4 (draft) | iPhone first, Android to follow | [POL-001](../policies/POL-001-data-services.md) | 2026-11-24 |
 
 **Our rule:** we protect the customer's data before we erase, replace, or give up on any device.
 
@@ -45,14 +45,14 @@ Start at the lowest level that solves the customer's problem. Each level up take
 
 | # | Service | What the team does | Protocol |
 |---|---|---|---|
-| 1 | **Find My Missing Photos** | Search Photos with the customer. Check Recently Deleted (items stay about 30 days), Hidden, Shared Library, and iCloud Photos. If they received the photo, check the original message or app. | Planned |
+| 1 | **Find My Missing Photos** | Search Photos with the customer. Check Recently Deleted (items stay about 30 days), Hidden, Shared Library, and iCloud Photos. If they received the photo, check the original message or app. | [DS-005](DS-005-photo-backup-transfer-help.md) |
 | 2 | **Find Missing Files or Attachments** | Check Files, iCloud Drive, the original message thread, or the app they used. Export only the items they ask for. | Planned |
 
 ### Level 2: Copy it (store computer)
 
 | # | Service | What the team does | Protocol |
 |---|---|---|---|
-| 3 | **Save My Photos & Videos** | Connect the unlocked phone, the customer taps **Trust**, import the requested photos and videos, and copy them to **the customer's drive**. Open a few files from the drive before handing it back. | Planned |
+| 3 | **Save My Photos & Videos** | Connect the unlocked phone, the customer taps **Trust**, import the requested photos and videos, and copy them to **the customer's drive**. Open a few files from the drive before handing it back. | [DS-005](DS-005-photo-backup-transfer-help.md) |
 | 4 | **Encrypted Computer Backup** | Back up with Finder (Mac) or the Apple Devices app (Windows), on the customer's computer when possible. The customer sets and keeps the backup password. | [DS-003](DS-003-backup-before-repair.md) Route B |
 | 5 | **Pull Specific Data From an Existing Backup** | Browse a compatible backup and export only what the customer needs, without restoring the whole thing. The customer needs the password for an encrypted backup. | **Pilot only.** Needs an approved tool. See [Launch plan](#launch-plan). |
 
@@ -60,7 +60,7 @@ Start at the lowest level that solves the customer's problem. Each level up take
 
 | # | Service | What the team does | Protocol |
 |---|---|---|---|
-| 6 | **Set Up & Verify My Backup** | Start an iCloud backup, check the last successful backup date, and check iCloud Photos separately if photos are what they care about. Show them where to check both next time. | [DS-003](DS-003-backup-before-repair.md) |
+| 6 | **Set Up & Verify My Backup** | Start an iCloud backup, check the last successful backup date, and check iCloud Photos separately if photos are what they care about. Show them where to check both next time. | [DS-005](DS-005-photo-backup-transfer-help.md), [DS-003](DS-003-backup-before-repair.md) |
 | 7 | **Move My Data to a New iPhone** | Quick Start or an existing backup. The customer checks photos, contacts, and key apps on the new phone **before** the old one is erased or traded in. | [DS-004](DS-004-new-phone-migration.md) |
 | 8 | **Restore a Backup to a Spare or Replacement Phone** | With the customer's approval, restore a known backup to a separate phone and check the items they need. Useful when the original phone is failing but a good backup exists. | Planned |
 
@@ -79,13 +79,17 @@ Start at the lowest level that solves the customer's problem. Each level up take
 
 ## Launch plan
 
-**Counter menu now** (three different needs: find it, copy it, protect it):
+**Lead service: Photo, Backup & Transfer Help.** Three counter services for three different needs (find it, copy it, protect it), all in [DS-005](DS-005-photo-backup-transfer-help.md):
 
-1. Find My Missing Photos
-2. Save My Photos & Videos
-3. Set Up & Verify My Backup
+1. Find My Photos
+2. Photo & Video Copy
+3. Backup Setup & Check
 
-**Next two weeks:** every tech practices on a **shop phone**, never a customer phone:
+Quote up front, give a pickup time, and agree on what happens if nothing is found, before any paid work.
+
+**Two-week trial at both stores:** same three workflows, and every counter request logged in the [counter trial log](../templates/counter-trial-log.md): what they asked for, whether they accepted the quote, hands-on minutes, and what we handed back.
+
+**Before the trial starts:** every tech practices on a **shop phone**, never a customer phone:
 - A photo search (Recently Deleted, Hidden, Shared Library)
 - A USB photo export to a drive, then opening the files to check them
 - An iCloud backup check, including the last backup date and iCloud Photos
@@ -116,4 +120,5 @@ AJ sets prices. They're kept in RepairDesk, not in this public toolbox.
 |---|---|---|---|
 | 0.1 | 2026-11-24 | First draft: top 10 list, rules, DS-001 | AJ |
 | 0.2 | 2026-11-24 | DS-002, DS-003, DS-004 drafted | AJ |
+| 0.4 | 2026-11-24 | DS-005 Photo, Backup & Transfer Help and two-week trial log added | AJ |
 | 0.3 | 2026-11-24 | Services regrouped into four levels; scope, intake question, launch plan, and POL-001 added | AJ |
