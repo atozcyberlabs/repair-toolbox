@@ -9,14 +9,15 @@ Start here, pick the device, then pick the problem.
 
 | Device | Guides |
 |---|---|
-| [iPhone](iphone/) | Random restarts, more coming |
+| [iPhone](iphone/) | Diagnostics, model notes, post-repair checklist |
 | [Android](android/) | Coming soon |
 | [Computers & Accessories](computers-accessories/) | Coming soon |
 
 ## Quick links
 
-- [iPhone Random Restarts](iphone/random-restarts/)
-
+- [iPhone Random Restarts](iphone/diagnostics/random-restarts/)
+- [iPhone Liquid Damage](iphone/diagnostics/liquid-damage.md)
+- [iPhone Post-Repair Checklist](iphone/quality-checks/post-repair-checklist.md)
 
 ## Bench rules
 
