@@ -6,6 +6,8 @@ Use this to document a real repair after it's finished and verified. Copy the bl
 - Only real repairs from our bench. Never publish an example or a guess as a case.
 - No customer names, phone numbers, ticket numbers, serial numbers, IMEIs, or full logs.
 - Use the short panic string only, with the actual sensor name.
+- Pick a **confirmation level** honestly (see below). A strong clue isn't the same as an isolated failure.
+- Tag every case using only the [tag list](#tag-list), so cases stay searchable.
 - Status stays **Pending Review** until AJ reviews it. Only then does it become **Verified**.
 
 ---
@@ -32,6 +34,9 @@ Symptom:        [What the customer and tech observed]
 ## Finding
 Evidence supports [part or cause] as the cause of the observed [symptom].
 
+Confirmation level:  [Suspected / Supported / Isolated]
+Original part:       [Retested / Inspected / Not retested] - [result]
+
 ## Repair performed
 [What was replaced or fixed]
 
@@ -45,6 +50,9 @@ Evidence supports [part or cause] as the cause of the observed [symptom].
 Reviewed by:   [AJ]
 Review date:   [YYYY-MM-DD]
 Final status:  [Verified / Needs more evidence]
+
+## Tags
+Device: [iphone-13]  Problem: [random-restarts]  Evidence: [panic-log, known-good-test]  Component: [charging-port-flex]  Category: [hardware-diagnostics]
 ```
 
 ---
@@ -74,6 +82,9 @@ Symptom:        Restarts about every 3 minutes, including on the lock screen
 Evidence supports a faulty charging port flex assembly as the cause
 of the observed restarts.
 
+Confirmation level:  Supported
+Original part:       Not retested
+
 ## Repair performed
 Replaced charging port flex assembly.
 
@@ -87,4 +98,33 @@ Replaced charging port flex assembly.
 Reviewed by:   AJ
 Review date:   [YYYY-MM-DD]
 Final status:  Example only
+
+## Tags
+Device: iphone-13  Problem: random-restarts  Evidence: panic-log, known-good-test  Component: charging-port-flex  Category: hardware-diagnostics
 ```
+
+To reach **Isolated**, the tech would also reinstall the original flex and see the restarts return, or find visible damage on it, and record that under "Original part."
+
+---
+
+## Confirmation levels
+
+| Level | Meaning | Example |
+|---|---|---|
+| **Suspected** | Evidence points to a cause, but no part test has been done yet | Panic log names a sensor on the charging port flex |
+| **Supported** | A known-good part made the symptom stop | Restarts stopped with a known-good charging port flex |
+| **Isolated** | Supported, and the original part was proven faulty | The original flex was reinstalled and the restarts came back, or it shows visible damage |
+
+Only **Supported** and **Isolated** cases can be marked Verified. A **Suspected** case stays Pending Review.
+
+## Tag list
+
+Use only these tags, lowercase with hyphens. To add a new tag, ask AJ so the list stays consistent.
+
+| Group | Tags |
+|---|---|
+| Device | `iphone-8`, `iphone-13`, `iphone-14`, `iphone-15`, `iphone-16`, `iphone-17` (add model variants like `iphone-14-pro` as needed) |
+| Problem | `random-restarts`, `no-power`, `charging`, `display-touch`, `battery-thermal`, `liquid-damage`, `camera-biometrics` |
+| Evidence | `panic-log`, `known-good-test`, `visual-inspection`, `diagnostics-mode`, `customer-report` |
+| Component | `battery`, `charging-port-flex`, `display`, `back-glass`, `logic-board`, `sensor-flex`, `camera`, `face-id`, `speaker`, `microphone` |
+| Category | `hardware-diagnostics`, `software`, `board-level` |
