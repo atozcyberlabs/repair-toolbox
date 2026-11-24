@@ -6,6 +6,8 @@
 |---|---|---|---|---|
 | DS-004 | 0.1 (draft) | iPhone to iPhone, Android to iPhone, Android to Android | AJ | 2026-11-24 |
 
+**Policy:** [POL-001](../policies/POL-001-data-services.md)
+
 **Objective:** The customer walks out with a new phone that has their data, their apps, and their sign-ins working, and the old phone still untouched until they say it's OK.
 
 **Use this when:** a customer buys or brings in a new phone and wants everything moved over.

@@ -6,6 +6,8 @@
 |---|---|---|---|---|
 | DS-002 | 0.1 (draft) | iPhone 8 and newer | AJ | 2026-11-24 |
 
+**Policy:** [POL-001](../policies/POL-001-data-services.md)
+
 **Objective:** As soon as a repaired board boots, move the customer's data somewhere safe before anything else is tested or replaced.
 
 **Use this when:** a phone that was dead or boot looping now boots after board work, and the customer wants their data.

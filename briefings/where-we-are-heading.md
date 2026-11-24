@@ -24,14 +24,14 @@ Board repair. We handle almost all board work in-house. That brings dead phones 
 
 ## What we're adding
 
-Software services that sit on top of our repairs:
+Walk-in data retrieval services that sit on top of our repairs, in four levels:
 
-1. **Software Rescue:** fix a stuck phone without wiping it
-2. **Data Rescue After Board Repair:** get the data off as soon as the board boots
-3. **Backup Before Repair and Backup Setup:** protect the data before risky work, and leave every customer with a working backup
-4. **New Phone Setup and Migration:** move everything to a new phone and check it with the customer
+1. **Find it:** missing photos and files, at the counter
+2. **Copy it:** photos, videos and backups the customer can open
+3. **Protect and move it:** working backups and new phone moves
+4. **Get it working long enough:** software rescue and board-level recovery, then save the data
 
-These are written up in [Data Services](../data-services/). More services are planned there too.
+We start with three on the counter menu: Find My Missing Photos, Save My Photos & Videos, and Set Up & Verify My Backup. The full list is in [Data Services](../data-services/), and the rules are in [POL-001](../policies/POL-001-data-services.md).
 
 ## What this means for you at the bench
 

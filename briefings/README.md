@@ -9,4 +9,4 @@ Briefings explain where the shop is heading and why we work the way we do. You d
 | [Where We're Heading](where-we-are-heading.md) | The data-first direction and the new software services | 2026-11-24 |
 | [iPhone Repair Outlook](iphone-repair-outlook.md) | Longer phone ownership, Apple repair programs, California repair law | 2026-11-24 |
 
-**New tech?** Read both, then go to [Follow](../README.md#2-follow-the-steps) on the front page.
+**New tech?** Read both, then read the [rules](../policies/), then go to [Follow](../README.md#3-follow-the-steps) on the front page.

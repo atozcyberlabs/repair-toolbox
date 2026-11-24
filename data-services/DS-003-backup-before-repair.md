@@ -6,6 +6,8 @@
 |---|---|---|---|---|
 | DS-003 | 0.1 (draft) | iPhone and Android | AJ | 2026-11-24 |
 
+**Policy:** [POL-001](../policies/POL-001-data-services.md)
+
 **Objective:** Back up the customer's data before any risky repair, and make sure every customer leaves with a working backup.
 
 **Use this when:** the repair is on the risky list below, or at checkout for any customer who has no recent backup.

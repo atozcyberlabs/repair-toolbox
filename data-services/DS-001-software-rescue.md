@@ -6,6 +6,8 @@
 |---|---|---|---|---|
 | DS-001 | 0.1 (draft) | iPhone 8 and newer | AJ | 2026-11-24 |
 
+**Policy:** [POL-001](../policies/POL-001-data-services.md)
+
 **Objective:** Get a phone that is stuck in startup working again while keeping the customer's data.
 
 **Use this when:** the phone is stuck on the Apple logo, shows the "connect to computer" screen, gets stuck during an update, or boot loops with no sign of liquid or physical damage.
